@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+
+
+    </head>
+    <body class="main-view">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="left-menu">
+            <ul>
+                <li id="lol">menu1
+                </li>
+                <li>menu2
+                </li>
+                <li>menu3
+                </li>
+                <li>menu4
+                </li>
+            </ul>
+        </div>
+        <div class="main-container">
+            <div class="header">
+            </div>
+            <div class="main-section" id="carousel">
+                <ul class="page-list">
+                    <li class="hidden menu-page">
+                        <div class="page-header">
+                            LUNDI 10 NOVEMBRE
+                        </div>
+                        <div class="page-content">
+                            This area is typically used to display captions associated with the images. They are set to hide and fade in on rotation.
+                        </div>
+                    </li>
+                    <li class="hidden menu-page">
+                        <div class="page-header">
+                            LUNDI 11 NOVEMBRE
+                        </div>
+                        <div class="page-content">
+                            This area is typically used to display captions associated with the images. They are set to hide and fade in on rotation.
+                        </div>
+                    </li>
+                    <li class="page-prev menu-page">
+                        <div class="page-header">
+                            LUNDI 12 NOVEMBRE
+                        </div>
+                        <div class="page-content">
+                            This area is typically used to display captions associated with the images. They are set to hide and fade in on rotation.
+                        </div>
+                    </li>
+                    <li class="page-current menu-page">
+                        <div class="page-header">
+                            MARDI 13 NOVEMBRE
+                        </div>
+                        <div class="page-content">
+                            This area is typically used to display captions associated with the images. They are set to hide and fade in on rotation.
+                        </div>
+                    </li>
+                    <li class="page-next menu-page">
+                        <div class="page-header">
+                            MERCREDI 14 NOVEMBRE
+                        </div>
+                        <div class="page-content">
+                            This area is typically used to display captions associated with the images. They are set to hide and fade in on rotation.
+                        </div>
+                    </li>
+                    <li class="hidden menu-page">
+                        <div class="page-header">
+                            MERCREDI 15 NOVEMBRE
+                        </div>
+                        <div class="page-content">
+                            This area is typically used to display captions associated with the images. They are set to hide and fade in on rotation.
+                        </div>
+                    </li>
+                    <li class="hidden menu-page">
+                        <div class="page-header">
+                            MERCREDI 16 NOVEMBRE
+                        </div>
+                        <div class="page-content">
+                            This area is typically used to display captions associated with the images. They are set to hide and fade in on rotation.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>            
+    <script type="text/javascript">
+                    function swiitch(direction){
+                        if(direction==1){
+                            var prevHidden = $('.page-prev').prev();
+                            $('.page-next').toggleClass('page-next hidden');
+                            $('.page-current').toggleClass('page-current page-next');
+                            $('.page-prev').toggleClass('page-prev page-current');
+                            prevHidden.toggleClass('page-prev hidden');
+
+                        }
+                        else if(direction==-1){
+                            var nextHidden = $('.page-next').next();
+                            $('.page-prev').toggleClass('page-current hidden');
+                            $('.page-current').toggleClass('page-prev page-current');
+                            $('.page-next').toggleClass('page-current page-next');
+                            nextHidden.toggleClass('page-next hidden');
+                        } 
+                        else {
+                            console.log("problem switch use! +1 or -1 for param")
+                        }
+                    }
+                    $(document).on('click', '.page-prev .page-header', function() {
+                       swiitch(1);
+                    });
+                    $(document).on('click', '.page-next .page-header', function() {swiitch(-1);});
+
+        </script>
+</html>
