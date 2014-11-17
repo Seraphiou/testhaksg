@@ -139,10 +139,13 @@ html, body {
 }
 .page-next {
     position: absolute;
-    top: 90px;
-    left: 515px;
-    width: 750px;
+    top: 19px;
+    left: 392px;
+    width: 1000px;
     height: 450px;
+    -ms-transform: scale(0.7); /* IE 9 */
+    -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */
+    transform: scale(0.7);
     z-index: 2;
     transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -214,21 +217,12 @@ html, body {
 
 .page-next .page-header {
     cursor: pointer;
-    width: 270px;
-    height: 60px;
-    background-color: #fff;
-    margin: 0 auto;
-    border: solid 1px #ccc;
     transition: all 1s ease;
     -ms-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
 }
 .page-next .page-content {
-    width: 750px;
-    height: 270px;
-    background-color: #fff;
-    border: solid 1px #ccc;
     border-top: none;
     opacity: 0;
     transition: all 1s ease;
@@ -240,10 +234,11 @@ html, body {
 .page-prev {
     z-index: 2;
     position: absolute;
-    left: -146px;
-    top: 90px;
-    width: 750px;
-    height: 450px;
+    left: -272px;
+    top: 18px;
+    -ms-transform: scale(0.7); /* IE 9 */
+    -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */
+    transform: scale(0.7);
     transition: all 1s ease;
     -ms-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -252,22 +247,12 @@ html, body {
 }
 .page-prev .page-header {
     cursor: pointer;
-    width: 270px;
-    height: 60px;
-    background-color: #fff;
-    margin: 0 auto;
-    border: solid 1px #ccc;
     transition: all 1s ease;
     -ms-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
 }
 .page-prev .page-content {
-    width: 750px;
-    height: 270px;
-    background-color: #fff;
-    border: solid 1px #ccc;
-    border-top: none;
     opacity: 0;
     transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -286,12 +271,16 @@ html, body {
    text-align: center;
 }
 
-
-
-
-
-
-
+.hidden.menu-page {
+    display: block;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
 
 
 
