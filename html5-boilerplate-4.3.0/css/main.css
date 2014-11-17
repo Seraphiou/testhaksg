@@ -152,6 +152,21 @@ html, body {
     -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
 }
+
+.page-prev {
+    z-index: 2;
+    position: relative;
+    left: -313px;
+    top: 2px;
+    -ms-transform: scale(0.7); /* IE 9 */
+    -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */
+    transform: scale(0.7);
+    transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+
+}
 /*@-webkit-keyframes current-next {
     0%   {}
     100%  {
@@ -229,21 +244,6 @@ html, body {
     -ms-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
-}
-
-.page-prev {
-    z-index: 2;
-    position: absolute;
-    left: -272px;
-    top: 18px;
-    -ms-transform: scale(0.7); /* IE 9 */
-    -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */
-    transform: scale(0.7);
-    transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-
 }
 .page-prev .page-header {
     cursor: pointer;
