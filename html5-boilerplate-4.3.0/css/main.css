@@ -272,7 +272,7 @@ html, body {
 }
 
 .hidden.menu-page {
-    display: block;
+    display: block!important;
     opacity: 0;
     width: 0px;
     height: 0px;
